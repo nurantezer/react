@@ -8,5 +8,6 @@
 -VIRTUAL DOM domun kullanıcı belleklerinde saklanmış hali. Normal dom çok zaman kaybettiriyor.Sayfayı yavaşlatıyor. Domun kopyalarına diff algoritması ile karşılaştırıp ilgili kompanentleri güncelliyor.Tamamne yapay zeka değil developerada iş düşüyor. Mesela reaact bütün elementleri statik kabul ediyor.Biz tanımlıyoruz.
 -npm uygulamalara erişiyoruz burdan.Play store gibi.Ama biz react uygulamalarında yarn ı tercih ediyoruz. npm i -global yarn   
 -npx create-react-app first-react-app     clt c durdur
+yarn create react-app first-app
 -package.json projenin müdürü gibi
 -npm i boostrap yarn add axios ile yeni bir kütüphane ekliyorum.
