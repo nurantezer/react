@@ -26,3 +26,6 @@ const setTime = () => {
 };
 
 setInterval(setTime, 1000);
+
+
+//*incele kısmına bak reacta sadece p yi günvelliyor. javascripte div güncelleniyor
