@@ -5,3 +5,4 @@
 -ES6 kullanıyor.Babel compailer kullanıyor.Eski versiyonlara çeviriliyor.
 -Dizayn-patent mvs,solid,dry,singeler paten
 -Dizayn patent bir projeye nasıl başlanır, nasıl daha verimli olur. MVC en eskisi ama hala kullanılıyor. Üç temel katmanı var. Model view controller. Model bacend tarafı. Contoreller genelli becadte dahildir. Verileri alıp view tarafına yani uı tarafına veriyor.Viewdan gelen ham veriler contoreller kısmından geçerek modele gelir.Tam terside olur. Yeni bir view katmanı oluşturursam mesela react kalktı.
+-VIRTUAL DOM domun kullanıcı belleklerinde saklanmış hali. Normal dom çok zaman kaybettiriyor.Sayfayı yavaşlatıyor. Domun kopyalarına diff algoritması ile karşılaştırıp ilgili kompanentleri güncelliyor.Tamamne yapay zeka değil developerada iş düşüyor. Mesela reaact bütün elementleri statik kabul ediyor.Biz tanımlıyoruz. 
