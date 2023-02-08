@@ -11,3 +11,7 @@
 yarn create react-app first-app
 -package.json projenin müdürü gibi
 -npm i boostrap yarn add axios ile yeni bir kütüphane ekliyorum.
+assest resim vs
+companent hazırladığım buton
+constants bazı global değişkenler
+contexts propların merkezi elden paylaşımı
