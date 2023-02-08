@@ -15,4 +15,4 @@ assest resim vs
 companent hazırladığım buton
 constants bazı global değişkenler
 contexts propların merkezi elden paylaşımı
-npm install sass
+npm install sass       packedjsona düşüyor bunlar
