@@ -7,7 +7,14 @@
 -next.js reactın bir freamworku burayı öğren
 -Gereksiz renderleri minimalize ediyor
 -Dizayn patent bir projeye nasıl başlanır, nasıl daha verimli olur. MVC en eskisi ama hala kullanılıyor. Üç temel katmanı var. Model view controller. Model bacend tarafı. Contoreller genelli becadte dahildir. Verileri alıp view tarafına yani uı tarafına veriyor.Viewdan gelen ham veriler contoreller kısmından geçerek modele gelir.Tam terside olur. Yeni bir view katmanı oluşturursam mesela react kalktı.
--VIRTUAL DOM domun kullanıcı belleklerinde saklanmış hali. Normal dom çok zaman kaybettiriyor.Sayfayı yavaşlatıyor. Domun kopyalarına diff algoritması ile karşılaştırıp ilgili kompanentleri güncelliyor.Değişen kısımları algılıyor. Tamamne yapay zeka değil developerada iş düşüyor. Mesela reaact bütün elementleri statik kabul ediyor.Biz tanımlıyoruz.
+-VIRTUAL DOM domun kullanıcı belleklerinde saklanmış hali. Normal dom çok zaman kaybettiriyor.Sayfayı yavaşlatıyor. Domun kopyalarına diff (farksal algoritma)algoritması ile karşılaştırıp ilgili kompanentleri güncelliyor.Değişen kısımları algılıyor. Tamamne yapay zeka değil developerada iş düşüyor. Mesela reaact bütün elementleri statik kabul ediyor.Biz tanımlıyoruz.
+-Virtual Dom, gerçek dom'un sanal bir kopyasıdır.
+Bunu bellekte tutuyoruz
+Kıyaslama algoritması ile kıyaslama yapıyoruz
+Değişiklikleri alğılayıp Dom' a basıyoruz.
+Dolayısıyla manipülasyonları azaltmış oluyoruz
+Manipülasyonlar çok fazla zaman kaybettirdiği için rEACT BUNDAN TASARRUF ETMİŞ OLUYOR
+-Dom apisinin obje formatında screeneni alıp clıent ramine yüklüyor.Kopyadaki değişikliği ekliyor
 -npm uygulamalara erişiyoruz burdan.Play store gibi.Ama biz react uygulamalarında yarn ı tercih ediyoruz. npm i -global yarn   
 -npx create-react-app first-react-app     clt c durdur
 yarn create react-app first-app
