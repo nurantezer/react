@@ -15,6 +15,8 @@ Değişiklikleri alğılayıp Dom' a basıyoruz.
 Dolayısıyla manipülasyonları azaltmış oluyoruz
 Manipülasyonlar çok fazla zaman kaybettirdiği için rEACT BUNDAN TASARRUF ETMİŞ OLUYOR
 -Dom apisinin obje formatında screeneni alıp clıent ramine yüklüyor.Kopyadaki değişikliği ekliyor
+-İndex.js de document.getElementById”root” diyerek id’si “root” olanı seçiyor.creatRoot ile root oluşturuyor. ReactDOm.ile bir şeyi render ediyor.
+Root.render diyerek App.js yi render ediyor
 -npm uygulamalara erişiyoruz burdan.Play store gibi.Ama biz react uygulamalarında yarn ı tercih ediyoruz. npm i -global yarn   
 -npx create-react-app first-react-app     clt c durdur
 yarn create react-app first-app
