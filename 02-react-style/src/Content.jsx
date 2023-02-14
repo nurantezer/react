@@ -10,7 +10,7 @@ const imgStyle ={
     
 }
     return (
-    <div>
+    <div className="content-div">
         <h2 style={{color:"red" , backgroundColor:"black"}}>React js</h2> //*içerideki süslü obje göndermeiz key value
         <p style={pStyle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, illo.</p>
         <img src="dffd" alt="sprig" />
