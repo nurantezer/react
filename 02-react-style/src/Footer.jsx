@@ -3,10 +3,9 @@
 const Footer = () => {
   return (
     <footer>
-     <p>Copyrigth by Clarusway {new Date().getFullYear()}</p>   
+      <p>Honoré de Balzac</p>
     </footer>
-    
-  )
+  );
 }
 
 export default Footer
