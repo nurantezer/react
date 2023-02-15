@@ -1,9 +1,13 @@
+import Card from "./components/card/Card"
+import data from "./utils/data"
 function App() {
   return (
     <>
-      <h1>Module CSS</h1>
+      {data.map(({ id, language, img, btnName }) => (
+        <Card key={id} Lang={language} img={img} btn={btnName} />
+      ))}
     </>
-  )
+  );
 }
 
 export default App
