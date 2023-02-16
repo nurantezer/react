@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       {data.map(({ id, language, img, btnName }) => (
-        <Card key={id} Lang={language} img={img} btn={btnName} />
+        <Card key={id} lang={language} img={img} btn={btnName} />
       ))}
     </>
   );
