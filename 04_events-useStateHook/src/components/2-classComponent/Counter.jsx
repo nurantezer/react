@@ -6,7 +6,13 @@ import React from 'react'  //*burdaki {companenti} silmek için aşağı react e
 export class Counter extends React.Component {
   render() {
     return (
-      <div>Counter</div>
+      <div className='container text-center'>
+      <h2>class components</h2>
+      <h1 className='display-4'>Count:0</h1>
+      <button className='btn btn-sucses'>INC</button>
+      <button className='btn btn-danger'>CLEAR</button>
+      <button className='btn btn-warning'>DEC</button>
+      </div>
     )
   }
 }
