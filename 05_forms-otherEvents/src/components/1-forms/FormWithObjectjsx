@@ -1,23 +1,24 @@
 import { useState } from "react";
 
 const FormWithObject = () => {
-const [username, setUsername] = useState("")
-const [email, setEmail] = useState("")
-const [password, setPassword] = useState("")
-
-const handleUsername = (e) =>{
-setUsername(e.target.value)
+const [formData, setFormData] = useState({
+  username:"",
+  email:"",
+  password:"",
+  address:"",
+})
+const{username, email,password} = FormData
+const handleFormData = (e) =>{
+setFormData({...formData, [e.target.id]:e.target.value})
 }
 
 const handleSubmit = (e) =>{
   e.preventDefault()
   alert(`username:${username} email:${email} password: ${password}`)
-  setEmail("")
-  setPassword("")
-  setUsername("")
+ 
 }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleFormData}>
       <h2 className="display-6 text-danger">FORM WİTH OBJECT</h2>
 
       <div className="mb-3">
@@ -28,7 +29,7 @@ const handleSubmit = (e) =>{
           type="email"
           className="form-control"
           id="username"
-          onChange={handleUsername}
+          onChange={handleFormData}
           value={username}
         />
       </div>
@@ -41,7 +42,7 @@ const handleSubmit = (e) =>{
           type="email"
           className="form-control"
           id="email"
-          onChange={() => setEmail(e.target.value)}
+          onChange={handleFormData}
           value={email}
         />
       </div>
@@ -53,7 +54,7 @@ const handleSubmit = (e) =>{
           type="password"
           className="form-control"
           id="password"
-          onChange={() => setPassword(e.target.value)}
+          onChange={handleFormData}
           value={email}
           required
         />
