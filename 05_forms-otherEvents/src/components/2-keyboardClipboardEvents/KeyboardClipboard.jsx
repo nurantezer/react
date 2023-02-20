@@ -8,6 +8,11 @@ const KeyboardClipboard = () => {
     e.preventDefault()
   }
  }
+
+ const handleAreaPaste = (e) =>{
+ e.target.style.fontSize = "30px"
+ 
+ }
   return (
     <div className="container text-center">
       <h2 className="display-5 text-danger">Keyboard-Clipboard Event</h2>
@@ -18,7 +23,7 @@ const KeyboardClipboard = () => {
       onKeyDown = {handleKeyDown}
       />
       <p className="text-start mt-4">{inputData.toLowerCase()}</p>
-      <textarea className="form-control" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      <textarea className="form-control" name="textarea" id="textarea" cols="30" rows="10" onPaste={handleAreaPaste}></textarea>
     </div>
   )
 }
