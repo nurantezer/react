@@ -1,6 +1,7 @@
 import Event from "./components/1-events/Event"
 import Counter from "./components/Counter"
 import UseStateCounter from "./components/UseStateCounter"
+import UseStateObject from "./components/UseStateObject"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Event/>
       <Counter/>
       <UseStateCounter/>
+      <UseStateObject/>
     </div>
   )
 }
