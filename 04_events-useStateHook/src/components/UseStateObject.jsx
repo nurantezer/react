@@ -11,6 +11,13 @@ const handleSalaryInc = () =>{
     setPerson({...person, salary: person.salary + 500})
 }
 
+const handleNameToggle = () =>{
+    setPerson({...person, name: person.name.toUpperCase(), surname: person.surname.toUpperCase()})
+}
+
+const handleSalaryDec = () => {
+    setPerson({...person, salary: person.salary - 500})
+}
 
   return (
     <div className='container text-center mt-4'>
@@ -18,7 +25,8 @@ const handleSalaryInc = () =>{
     <h3 className='display-4'>{person.name} {person.surname}</h3>
     <h3 className='display-6'>Salary:{person.salary}</h3>
     <button className='btn btn-success' onClick={handleSalaryInc}>SALARY INC</button>
-
+    <button className='btn btn-danger' onClick={handleNameToggle}>CLR</button>
+    <button className='btn btn-warning' onClick={handleSalaryDec}>SALARY DEC</button>
     </div>
   )
 }
