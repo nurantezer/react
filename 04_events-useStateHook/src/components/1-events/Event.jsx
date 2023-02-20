@@ -1,8 +1,23 @@
 
 
 const Event = () => {
+
+let text = "Hi FS13"
+
+const handleClick = () =>{
+  alert("Hi events")
+}
+
+const handleReset = (msg) =>{
+  console.log(msg)
+}
+
   return (
-    <div>Event</div>
+    <div>
+      <h1>{text}</h1>
+      <button onClick={handleClick}>CLİCK</button>
+      <button onClick={() => handleReset("please clear the text")}>RESET</button>
+    </div>
   )
 }
 
