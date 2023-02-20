@@ -15,7 +15,8 @@ setFormData({...formData, [e.target.id]:e.target.value})
 const handleSubmit = (e) =>{
   e.preventDefault()
   alert(`username:${username} email:${email} password: ${password}`)
- 
+
+ setFormData({})
 }
   return (
     <form onSubmit={handleFormData}>
