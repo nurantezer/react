@@ -12,6 +12,9 @@ setUsername(e.target.value)
 const handleSubmit = (e) =>{
   e.preventDefault()
   alert(`username:${username} email:${email} password: ${password}`)
+  setEmail("")
+  setPassword("")
+  setUsername("")
 }
   return (
     <form onSubmit={handleSubmit}>
