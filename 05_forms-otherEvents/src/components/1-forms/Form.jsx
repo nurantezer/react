@@ -1,30 +1,58 @@
+import { useState } from "react";
+
 const Form = () => {
+const [username, setUsername] = useState("")
+const [email, setEmail] = useState("")
+const [password, setPassword] = useState("")
+
+const handleUsername = (e) =>{
+setUsername(e.target.value)
+}
+
+const handleSubmit = (e) =>{
+  e.preventDefault()
+  alert(`username:${username} email:${email} password: ${password}`)
+}
   return (
-  
-     <form>
+    <form onSubmit={handleSubmit}>
       <h2 className="display-6 text-danger">FORMS</h2>
 
       <div className="mb-3">
         <label htmlFor="username" className="form-label">
-          Username
+          Username: <span>{username}</span>
         </label>
-        <input type="email" className="form-control" id="username" />
+        <input
+          type="email"
+          className="form-control"
+          id="username"
+          onChange={handleUsername}
+          value={username}
+        />
       </div>
 
       <div className="mb-3">
-        <label htmlFor="exampleInputEmail1" className="form-label">
-          Email address
+        <label htmlFor="email" className="form-label">
+          Email <span>{email}</span>
         </label>
-        <input type="email" className="form-control" id="exampleInputEmail1" />
+        <input
+          type="email"
+          className="form-control"
+          id="email"
+          onChange={() => setEmail(e.target.value)}
+          value={email}
+        />
       </div>
       <div className="mb-3">
-        <label htmlFor="exampleInputPassword1" className="form-label">
+        <label htmlFor="paessword" className="form-label">
           Password
         </label>
         <input
           type="password"
           className="form-control"
-          id="exampleInputPassword1"
+          id="password"
+          onChange={() => setPassword(e.target.value)}
+          value={email}
+          required
         />
       </div>
 
