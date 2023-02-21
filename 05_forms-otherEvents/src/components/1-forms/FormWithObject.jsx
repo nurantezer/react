@@ -27,9 +27,21 @@ const FormWithObject = () => {
             id='usermane'
             value={username || ""} //* username yoksa inputun valusuna null ata
             //! controlled- uncontrolled error (eğer bir inputun valuesu undifened olursa böyle bir hata gelir)
+            required
             />
         </div>
-        
+
+        <div className="mb-3">
+            <label htmlFor="email">
+                Email: <span>{email}</span>
+            </label>
+            <input type="email"
+            className="form-control"
+            id="email"
+            value={email || ""}
+            required
+             />
+        </div>
     </form>
   )
 }
