@@ -11,31 +11,57 @@ const KeyboardClipboard = () => {
         }
     }
 
+    const handleParCopy= (e) =>{
+        e.preventDefault()
+        alert("you cannot copy this text")
+    }
+
+    const handleParCut = (e) => {
+        e.preventDefault()
+        alert("you cannot copy this text")
+    }
+
+    const handleAreaPaste = (e) => {
+        console.log(e)
+        e.target.style.fontSize = "30px"
+        e.target.border = "3px solid red"
+        e.target.style.backgroundColor = "ligthgrey"
+        e.target.value += e.clipboardData.getData("text").toLocaleUpperCase()
+        e.preventDefault()
+    }
 
 
   return (
-    <div className='container text-center'>
-        <h2 className="display-5 text-danger">Keyboard-Clipboard Event</h2>
+    <div className="container text-center">
+      <h2 className="display-5 text-danger">Keyboard-Clipboard Event</h2>
 
-        <input type="text"
-        className='form-control'
+      <input
+        type="text"
+        className="form-control"
         onChange={(e) => {
-            e.target.value = e.target.value.toLocaleUpperCase()
-            setInputData(e.target.value)
-        }} 
+          e.target.value = e.target.value.toLocaleUpperCase();
+          setInputData(e.target.value);
+        }}
         onKeyDown={handleKeyDown}
-         />
+      />
 
-         <div className="text-start mt-4">
-            <h6>Copied Input Data</h6>
-            <p> onCopy={handleParCopy} onCut{handleParCut}
-            {inputData.toLowerCase()}
-            </p>
-         </div>
+      <div className="text-start mt-4">
+        <h6>Copied Input Data</h6>
+        <p onCopy={handleParCopy} onCut={handleParCut}>
+          {inputData.toLowerCase()}
+        </p>
+      </div>
 
-         <textarea className='form-control' name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      <textarea
+        className="form-control"
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        onPaste={handleAreaPaste}
+      ></textarea>
     </div>
-  )
+  );
 }
 
 export default KeyboardClipboard
