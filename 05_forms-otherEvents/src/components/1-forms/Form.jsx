@@ -56,7 +56,7 @@ const Form = () => {
             <input type="password" 
             className="form-control" 
             id="password" 
-            value={password}
+            value={password} //*boş değer atamak için
             required  
             onChange={(e) => setPassword(e.target.value)}/>
         </div>
