@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const Form = () => {
     const [username, setUsername] = useState("")
-
+    const [email, setEmail] = useState("")
 
 
    const handleUsername = (e) => {
@@ -24,9 +24,9 @@ const Form = () => {
 
         <div className="mb-3">
             <label htmlFor="email" className="form-label">
-                Email: <span>{}</span>
+                Email: <span>{email}</span>
             </label>
-            <input type="email" className="form-control" id="email" required />
+            <input type="email" className="form-control" id="email" required  onChange={(e) => setEmail(e.target.value)}/>
         </div>
 
         <div className="mb-3">
