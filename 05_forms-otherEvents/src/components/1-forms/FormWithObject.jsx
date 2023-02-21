@@ -42,6 +42,18 @@ const FormWithObject = () => {
             required
              />
         </div>
+
+        <div className="mb-3">
+            <label htmlFor="password" className="form-label">
+                Password
+            </label>
+            <input type="password"
+            className="form-control"
+            id="password"
+            value={password || ""}
+            required
+             />
+        </div>
     </form>
   )
 }
