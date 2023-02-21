@@ -1,10 +1,10 @@
+import Header from "./components/Header";
+import Container from "react-bootsrap/Container";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 style={{ textAlign: "center" }}>NBA Legends App</h1>
-      </header>
-    </div>
+    <Container>
+      <Header/>
+    </Container>
   );
 }
 
