@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Container from "react-bootsrap/Container";
 function App() {
   return (
-    <Container>
+    <Container className="text-center mt-4">
       <Header/>
     </Container>
   );
