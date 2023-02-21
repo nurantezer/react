@@ -24,9 +24,9 @@ const KeyboardClipboard = () => {
     const handleAreaPaste = (e) => {
         console.log(e)
         e.target.style.fontSize = "30px"
-        e.target.border = "3px solid red"
-        e.target.style.backgroundColor = "ligthgrey"
-        e.target.value += e.clipboardData.getData("text").toLocaleUpperCase()
+        e.target.border = "3px solid black"
+        e.target.style.backgroundColor = "blue"
+        e.target.value += e.clipboardData.getData("text").toLocaleUpperCase() //*üzerine eklemesi için +=
         e.preventDefault()
     }
 
