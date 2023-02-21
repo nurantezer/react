@@ -1,15 +1,25 @@
+import { useState } from "react"
 
 
 const Form = () => {
+    const [username, setUsername] = useState("")
+
+
+
+   const handleUsername = (e) => {
+        setUsername(e.target.value)
+    }
+
+
   return (
     <form>
         <h2 className="display-6 text-danger">FORMS</h2>
 
         <div className="mb-3">
             <label htmlFor="username" className="form-label">
-                Username: <span>{}</span>
+                Username: <span>{username}</span>
             </label>
-            <input type="text" className="form-control" id="username" required />
+            <input type="text" className="form-control" id="username" required onChange={handleUsername} value={username}/>
         </div>
 
         <div className="mb-3">
