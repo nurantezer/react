@@ -31,7 +31,11 @@ class LifeCycleMethods extends React.Component {
       count: this.state.count + 1,
     })
   }
-
+ 
+  componentDidMount({
+  
+  })
+  
   render() {
     return (
       <div className="container text-center">
