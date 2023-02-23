@@ -33,7 +33,12 @@ export class LifeCycleMethods extends React.Component {
     //   mailgönder()
     // }
   }
-  
+
+//!5-) Bir component DOM agacından kaldırıldıkten hemen sonra cagrilir.
+componentWillUnmount(){
+  console.log("5-componentWillUnmount")
+}
+
   render() {
     //! 2-) Her bir state ya da prop degistiginde (render) cagrilir
     console.log("2-Rendered");
