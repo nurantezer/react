@@ -6,17 +6,18 @@ const User = () => {
 
     const getUser = () => {
       fetch("https://randomuser.me/api/")
-        .then((res) => res.json())
-        .then((data) => setUser(data.results[0]))
-        .catch((err) => console.log(err));
-    };
+      .then((res) => res.json())
+      .then((data) => setUser(data.results[0]))
+      .catch((err) => console.log(err))
+    }
 
     useEffect(() => {
       console.log("Mounting")
       getUser()
      
     }, [])
-    
+     console.log("Render")
+     console.log(user)
   return (
     <div>
       <h1>
