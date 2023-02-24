@@ -1,6 +1,6 @@
-import React from 'react'
-
-const TutorialList = () => {
+import {FaEdit} from "react-icons/fa";
+import { AiFillDelete } from "react-icons/ai"
+const TutorialList = ({tutorials}) => {
   return (
     <div className='container mt-4'>
       <table className='table table-striped'>
@@ -13,7 +13,31 @@ const TutorialList = () => {
         </tr>
       </thead>
       <tbody>
-        
+        {tutorials?.map((item) =>{
+          const {id,title,description} = item
+          return (
+            <tr key={id}>
+              <th>{id}</th>
+              <td>{title}</td>
+              <td>{description}</td>
+              <td className="text-center text-nowrap">
+                <FaEdit
+                  size={20}
+                  type="button"
+                  className="me-2 text-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#edit-tutor"
+                />
+                <AiFillDelete
+                size={22}
+                type="button"
+                className="text-danger"
+                
+                />
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
       </table>
     </div>
