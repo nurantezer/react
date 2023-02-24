@@ -1,6 +1,12 @@
 import {FaEdit} from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai"
-const TutorialList = ({tutorials}) => {
+const TutorialList = ({tutorials, getTutorials}) => {
+
+  
+  
+  
+  
+  
   return (
     <div className='container mt-4'>
       <table className='table table-striped'>
@@ -32,7 +38,7 @@ const TutorialList = ({tutorials}) => {
                 size={22}
                 type="button"
                 className="text-danger"
-                
+                onClick={() => deleteTutorial(id)}
                 />
               </td>
             </tr>
