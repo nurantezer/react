@@ -1,9 +1,10 @@
+import Container from "react-bootstrap/Container";
 import Header from "./components/Header";
-import Container from "react-bootsrap/Container";
 function App() {
   return (
     <Container className="text-center mt-4">
-      <Header/>
+      <Header />
+    
     </Container>
   );
 }
