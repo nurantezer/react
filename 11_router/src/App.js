@@ -7,19 +7,28 @@ import PersonDetail from "./pages/PersonDetail"
 import Contact from "./pages/Contact"
 import Paths from "./pages/Paths"
 import NotFound from "./pages/NotFound"
+import FullStack from "./pages/FullStack"
+import ReactJS from "./pages/ReactJS"
+import Aws from "./pages/Aws"
 function App() {
   return (
-    <div >
+    <div>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/people" element={<People />} />
         <Route path="/people/:id" element={<PersonDetail />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/paths" element={<Paths/>} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/paths" element={<Paths />}>
+          <Route path="fullstack" element={<FullStack />}>
+            <Route path="react" element={<ReactJS />} />
+          </Route>
+          <Route path="" element={<Aws />} />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
