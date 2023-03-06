@@ -10,7 +10,7 @@ const Doctors = ({ doctors, appointments, setAppointments }) => {
 
   const handleClick = (drName) => {
     setShow(true)
-    selectedDrName(drName)
+    setSelectedDrName(drName)
   }
 
   return (
