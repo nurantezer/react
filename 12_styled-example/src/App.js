@@ -1,6 +1,8 @@
 import { ThemeProvider } from "styled-components";
+import Header from "./components/Header";
 import Nav from "./components/Nav";
-
+import Container from "./components/styled/Conteiner";
+import { GlobalStyles } from "./components/styled/GlobalStyles";
 const styles = {
   colors: {
     primary: "#eee",
@@ -14,7 +16,11 @@ const styles = {
 const App = () => {
   return (
     <ThemeProvider theme={styles}>
+      <GlobalStyles/>
       <Nav />
+      <Container>
+        <Header/>
+      </Container>
     </ThemeProvider>
   );
 };
