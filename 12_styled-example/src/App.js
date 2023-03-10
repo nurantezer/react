@@ -1,4 +1,6 @@
 import { ThemeProvider } from "styled-components";
+import Card from "./components/Card";
+import data from "./data";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Container from "./components/styled/Conteiner";
@@ -19,7 +21,10 @@ const App = () => {
       <GlobalStyles/>
       <Nav />
       <Container>
-        <Header/>
+        <Header />
+        {data.map((item, index) => {
+          return <Card {...item} key={index} />
+        })}
       </Container>
     </ThemeProvider>
   );
