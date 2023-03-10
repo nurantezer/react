@@ -1,7 +1,10 @@
+import HeaderText from "./components/HeaderText";
+
 const App = () => {
   return (
     <>
-      <h1>Styled Components</h1>
+      <HeaderText renk="hotpink">Styled Components</HeaderText>
+      <HeaderText renk="#734586" bgRenk="#eee">Styled Components</HeaderText>
     </>
   );
 };
