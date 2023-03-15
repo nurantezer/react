@@ -1,24 +1,24 @@
-import { useContext } from "react"
-import { useState } from "react"
-import { createContext } from "react"
+import { useContext } from "react";
+import { useState } from "react";
+import { createContext } from "react";
 
 //! 1) Creating Context
-export const LoginContext = createContext()
+export const LoginContext = createContext();
 
 //! 2) Provider
 const LoginProvider = ({ children }) => {
   // props.children
-  const [user, setUser] = useState({ email: "", password: "" })
-  const values = { user, setUser }
+  const [user, setUser] = useState({ email: "", password: "" });
+  const values = { user, setUser };
 
   return (
     <LoginContext.Provider value={values}>{children}</LoginContext.Provider>
-  )
-}
+  );
+};
 
 // ! 3) Consuming
 export const useLoginContext = () => {
-  return useContext(LoginContext)
-}
+  return useContext(LoginContext);
+};
 
-export default LoginProvider
+export default LoginProvider;
