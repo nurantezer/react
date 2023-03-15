@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import People from "./pages/People";
+import Footer from "./components/Footer";
 import PrivateRouter from "./pages/PrivateRouter";
 import PersonDetail from "./pages/PersonDetail";
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </LoginProvider>
   );
